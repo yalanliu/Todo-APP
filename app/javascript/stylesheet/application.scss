@@ -1,0 +1,67 @@
+@import 'bootstrap';
+body {
+  background-image: url('/assets/sky.jpg');
+  background-repeat: no-repeat;
+}
+.card-deco {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2);
+  background-color: rgba(240, 240, 240, 0.85);
+}
+.alert-deco {
+  background-color: transparent;
+}
+a {
+  color: #666;
+}
+.list-group-item-deco, .form-control-deco {
+  background-color: rgba(250, 250, 250, .85);
+}
+li span.list-title {
+  font-size: 1rem;
+}
+li span.list-description {
+  font-size: .8rem;
+}
+td.task-content {
+  width: 80%;
+}
+td.complete-task-deco {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+tr.uncomplete-task-deco:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+i.fa-check-circle, i.fa-trash-alt {
+  color: #fdfdfe;
+}
+a.check-button:hover, a.trash-button:hover {
+  background-color: transparent;
+  text-decoration: none;
+  i.fa-check-circle {
+    color: #077c8e;
+  }
+  i.fa-trash-alt:hover {
+    color: #e43737;
+  }
+}
+.edit-icon {
+  color: #888;
+}
+.edit-icon:hover {
+  color: #333;
+  background-color: transparent;
+}
+.error-message-text {
+  color: rgba(247, 62, 62, .9);
+}
+.field_with_errors {
+  background-color: rgba(247, 62, 62, .3);
+  display: block;
+}
+.field_with_errors:nth-of-type(2n+1) {
+  border-radius: 5px 5px 0 0;
+}
+
+.field_with_errors:nth-of-type(2n) {
+  border-radius: 0 0 5px 5px;
+}

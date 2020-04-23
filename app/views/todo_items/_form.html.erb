@@ -1,5 +1,5 @@
-<%= form_with model: [@todo_list, @todo_list.todo_items.build] do |form| %>
-  <%= form.text_field :content, placeholder: "Add New Todo" %>
+<%= form_with model: [@todo_list, @todo_list.todo_items.build], class: 'form-inline d-inline-block' do |form| %>
+  <%= form.text_field :content, placeholder: "Add New Task", class: 'form-control form-control-deco mr-2' %>
 
-  <%= form.submit %>
+  <%= form.submit 'Create Task', class: 'btn btn-outline-secondary' %>
 <% end %>

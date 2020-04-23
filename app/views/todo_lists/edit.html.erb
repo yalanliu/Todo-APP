@@ -1,6 +1,12 @@
-<h1>Editing Todo List</h1>
+<div class="card-body">
+  <h5 class="card-title text-center">
+    Edit Todo List
+  </h5>
+</div>
+<div class="card-body">
+  <%= render 'form', todo_list: @todo_list %>
+</div>
+<%= link_to 'Cancel', @todo_list, method: 'delete',data: {confirm: 'Maybe lots of tasks in here.    Are you sure?'}, class: 'btn-light card-footer text-center text-decoration-none mt-4 font-weight-light' %>
+<%= link_to 'Back', @todo_list, class: 'btn-light card-footer text-center text-decoration-none font-weight-bold' %>
 
-<%= render 'form', todo_list: @todo_list %>
 
-<%= link_to 'Show', @todo_list %> |
-<%= link_to 'Back', todo_lists_path %>

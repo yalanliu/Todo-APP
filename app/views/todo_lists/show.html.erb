@@ -1,21 +1,21 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @todo_list.title %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @todo_list.description %>
-</p>
-
-<div id="todo_items_wrapper">
-  <%= render @todo_list.todo_items %>
-  <div id="form">
-    <%= render "todo_items/form" %>
-  </div>
+<div class="card-body text-center mb-3">
+  <h5 class="card-title">
+    <%= @todo_list.title %>
+    <%= link_to edit_todo_list_path(@todo_list), class: 'edit-icon ml-1' do %>
+      <small><i class="fas fa-pencil-alt"></i></small>
+    <% end %>
+  </h5>
+  <p class="card-text">
+    <%= @todo_list.description %>
+  </p>
 </div>
 
-<%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
-<%= link_to 'Back', todo_lists_path %>
+<table class="table">
+  <%= render @todo_list.todo_items %>
+</table>
+
+<div class="text-center card-body">
+  <%= render "todo_items/form" %>
+</div>
+
+<%= link_to 'Back', todo_lists_path, class: 'btn-light card-footer text-center text-decoration-none' %>

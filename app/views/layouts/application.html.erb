@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Todo</title>
+    <title>Todo List APP</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,19 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-10 col-lg-8 mt-5">
+          <div class="card card-deco">
+            <% if notice %>
+              <div class="alert-deco alert alert-light text-center text-info mb-0" role="alert">
+                <%= notice %>
+              </div>
+            <% end  %>
+            <%= yield %>
+          <div>
+        <div>
+      <div>
+    </div>
   </body>
 </html>
