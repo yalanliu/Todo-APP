@@ -1,24 +1,7 @@
-# README
+# Todo APP (待辦清單)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+功能:
 
-Things you may want to cover:
+* 可新增(含編輯/刪除)清單類別
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* 可進入該清單類別後增加任務內容，未完成及最新新增的任務項目會排序在上面
